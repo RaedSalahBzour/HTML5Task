@@ -3,7 +3,11 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content=" description of the page content." />
+    <meta name="author" content="RaedSalah" />
+
     <title>Html5Task</title>
+    <link rel="canonical" href="https://example.com/preferred-page" />
   </head>
   <body>
     <!--first requirement-->
@@ -75,6 +79,11 @@
       <input type="reset" />
       <input type="submit" />
     </form>
+    <br />
+    <hr />
+    <hr />
+    <hr />
+    <br />
     <!--second requirement-->
     <img src="..." alt="My Image" />
     <hr />
@@ -82,8 +91,69 @@
     <hr />
     <video controls width="400">
       <source src="..." type="video/mp4" />
-      <!--The type attribute in  <source> element specifies the MIME type of the video file.-->
+      <source src="..." type="video/webm" />
+      <!--The type attribute in  <source> element specifies the MIME type of the video file.
+    If the browser supports the video format specified in the first <source> element (video/mp4), it will use that source. If not, it will try the second <source> element (video/webm).
+Common video MIME types include:
+
+video/mp4: MPEG-4 files with H.264 video codec and AAC audio codec.
+video/webm: WebM files with VP8 video codec and Vorbis audio codec.
+video/ogg: Ogg files with Theora video codec and Vorbis audio codec.
+-->
     </video>
+    <br />
+    <hr />
+    <hr />
+    <hr />
+    <br />
+    <!--third requirement-->
+    <h2>Student Marks Table</h2>
+
+    <br />
+    <hr />
+    <hr />
+    <hr />
+    <br />
+    <!--fifth requirement-->
+    <!--1-->
+    <!--Web accessibility involves designing and developing websites in a way that makes them usable for everyone, including people with disabilities. HTML provides several features and attributes that contribute to web accessibility. Here are some key accessibility features in HTML:
+Semantic HTML Elements:
+Using semantic elements like <header>, <nav>, <main>, <section>, <article>, and <footer> helps screen readers and other assistive technologies understand the structure and purpose of the content.-->
+    <!--2-->
+    <!--Text Alternatives for Images:
+The alt attribute in the <img> element provides a text alternative for images. This is crucial for users who rely on screen readers or those with slow internet connections where images may not load.
+<img src="example.jpg" alt="A description of the image">-->
+    <!--3-->
+    <!--Form Labels:
+Associating form controls with labels improves accessibility. Use the <label> element and the for attribute to link labels with their corresponding form controls.
+
+<label for="username">Username:</label>
+<input type="text" id="username" name="username">-->
+    <!--4,5-->
+    <!--
+Web accessibility involves designing and developing websites in a way that makes them usable for everyone, including people with disabilities. HTML provides several features and attributes that contribute to web accessibility. Here are some key accessibility features in HTML:
+
+Semantic HTML Elements:
+Using semantic elements like <header>, <nav>, <main>, <section>, <article>, and <footer> helps screen readers and other assistive technologies understand the structure and purpose of the content.
+
+Text Alternatives for Images:
+The alt attribute in the <img> element provides a text alternative for images. This is crucial for users who rely on screen readers or those with slow internet connections where images may not load.
+
+html
+Copy code
+<img src="example.jpg" alt="A description of the image">
+Form Labels:
+Associating form controls with labels improves accessibility. Use the <label> element and the for attribute to link labels with their corresponding form controls.
+
+html
+Copy code
+<label for="username">Username:</label>
+<input type="text" id="username" name="username">
+Adequate Color Contrast:
+Ensure there is sufficient contrast between text and background colors to make content readable for users with visual impairments.
+
+Semantic Headings:
+Properly structuring headings with <h1>, <h2>, etc., helps users with screen readers navigate and understand the hierarchy of content.-->
     <!--last requirement
 1.<meta charset="UTF-8">: This meta tag defines the character encoding for the HTML document. It ensures that the browser displays the text correctly.
 
