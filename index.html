@@ -5,5 +5,107 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Html5Task</title>
   </head>
-  <body></body>
+  <body>
+    <!--first requirement-->
+    <form action="">
+      <label for="name">Name:</label>
+      <input
+        type="text"
+        id="name"
+        placeholder="Enter your name"
+        maxlength="20"
+        required
+        autofocus
+        title="alphabet characters only"
+      />
+      <hr />
+      <label for="age">Age:</label>
+      <input type="number" id="age" placeholder="Enter your age" max="36" />
+      <hr />
+      <label for="email">Email:</label>
+      <input
+        type="email"
+        id="email"
+        placeholder="Enter your email"
+        required
+        pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}"
+      />
+      <hr />
+      <label for="password">Password:</label>
+      <input
+        type="password"
+        id="password"
+        placeholder="Enter your password"
+        required
+      />
+      <hr />
+      <label for="gender">Gender:</label>
+      <input type="radio" name="gender" id="gender" value="male" /> Male
+      <input type="radio" name="gender" id="gender" value="female" /> Female
+      <hr />
+      <label for="date">Date:</label>
+      <input type="date" id="date" placeholder="Enter your date" required />
+      <hr />
+      <label for="tasks">Tasks:</label>
+      <input type="checkbox" name="tasks" id="tasks" value="yes" />Task 1
+      <input type="checkbox" name="tasks" id="tasks" value="yes" />Task 2
+      <input type="checkbox" name="tasks" id="tasks" value="yes" />Task 3
+      <hr />
+      <label for="color">Color</label>
+      <input type="color" id="color" />
+      <hr />
+      <label for="file">File:</label>
+      <input type="file" id="file" />
+      <hr />
+      <label for="range">Range:</label>
+      <input type="range" id="range" />
+      <hr />
+      <label for="time">Time:</label>
+      <input type="time" id="time" />
+      <hr />
+      <label for="url">URL:</label>
+      <input type="url" id="url" />
+      <hr />
+      <label for="image">Image:</label>
+      <input type="image" id="image" readonly />
+      <hr />
+      <label for="hidden">hidden:</label>
+      <input type="hidden" id="hidden" />
+      <hr />
+      <input type="reset" />
+      <input type="submit" />
+    </form>
+    <!--second requirement-->
+    <img src="..." alt="My Image" />
+    <hr />
+    <audio src="..." controls></audio>
+    <hr />
+    <video controls width="400">
+      <source src="..." type="video/mp4" />
+      <!--The type attribute in  <source> element specifies the MIME type of the video file.-->
+    </video>
+    <!--last requirement
+1.<meta charset="UTF-8">: This meta tag defines the character encoding for the HTML document. It ensures that the browser displays the text correctly.
+
+2.<meta charset="UTF-8">
+3.<meta name="viewport" content="width=device-width, initial-scale=1.0">: This meta tag is essential for responsive web design. It ensures that the web page is properly scaled on various devices.
+
+4.<meta name="viewport" content="width=device-width, initial-scale=1.0">
+5.<meta name="description" content="A brief description of the page">: This meta tag provides a short description of the content on the page. It is often used by search engines to display a snippet in search results.
+
+6.<meta name="description" content="An example web page with meta tags">
+7.<meta name="keywords" content="web page, example, meta tags">: Although not as important as they used to be, some search engines may still consider the keywords meta tag. It includes keywords relevant to the content of the page.
+
+8.<meta name="keywords" content="web page, example, meta tags">
+9.<meta name="author" content="Author Name">: This meta tag specifies the author of the web page.
+
+10.<meta name="author" content="John Doe">
+11.<meta name="robots" content="index, follow">: This meta tag instructs search engine robots on how to index and follow links on the page. The values can be "index," "noindex," "follow," or "nofollow."
+
+12.<meta name="robots" content="index, follow">
+13.<meta http-equiv="refresh" content="5;url=http://example.com">: This meta tag redirects the page to another URL after a specified time (in seconds).
+
+14.<meta http-equiv="refresh" content="5;url=http://example.com">
+These are just a few examples of meta tags. The specific meta tags used on a webpage depend on the requirements of the website and its content. Keep in mind that the importance and relevance of certain meta tags may change over time as search engine algorithms evolve.-->
+  </body>
 </html>
