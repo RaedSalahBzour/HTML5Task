@@ -22,72 +22,70 @@
   <body>
     <!--first requirement-->
     <form action="">
-      <label for="name">Name:</label>
-      <input
-        type="text"
-        id="name"
-        placeholder="Enter your name"
-        maxlength="20"
-        required
-        autofocus
-        title="alphabet characters only"
-      />
-      <hr />
-      <label for="age">Age:</label>
-      <input type="number" id="age" placeholder="Enter your age" max="36" />
-      <hr />
-      <label for="email">Email:</label>
-      <input
-        type="email"
-        id="email"
-        placeholder="Enter your email"
-        required
-        pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}"
-      />
-      <hr />
-      <label for="password">Password:</label>
-      <input
-        type="password"
-        id="password"
-        placeholder="Enter your password"
-        required
-      />
-      <hr />
-      <label for="gender">Gender:</label>
-      <input type="radio" name="gender" id="gender" value="male" /> Male
-      <input type="radio" name="gender" id="gender" value="female" /> Female
-      <hr />
-      <label for="date">Date:</label>
-      <input type="date" id="date" placeholder="Enter your date" required />
-      <hr />
-      <label for="tasks">Tasks:</label>
-      <input type="checkbox" name="tasks" id="tasks" value="yes" />Task 1
-      <input type="checkbox" name="tasks" id="tasks" value="yes" />Task 2
-      <input type="checkbox" name="tasks" id="tasks" value="yes" />Task 3
-      <hr />
-      <label for="color">Color</label>
-      <input type="color" id="color" />
-      <hr />
-      <label for="file">File:</label>
-      <input type="file" id="file" />
-      <hr />
-      <label for="range">Range:</label>
-      <input type="range" id="range" />
-      <hr />
-      <label for="time">Time:</label>
-      <input type="time" id="time" />
-      <hr />
-      <label for="url">URL:</label>
-      <input type="url" id="url" />
-      <hr />
-      <label for="image">Image:</label>
-      <input type="image" id="image" readonly />
-      <hr />
-      <label for="hidden">hidden:</label>
-      <input type="hidden" id="hidden" />
-      <hr />
-      <input type="reset" />
-      <input type="submit" />
+      <div class="first flex">
+        <div>
+          <label for="name">Name:</label>
+          <input
+            type="text"
+            id="name"
+            placeholder="Enter your name"
+            maxlength="20"
+            required
+            autofocus
+            title="alphabet characters only"
+          />
+          <label for="age">Age:</label>
+          <input type="number" id="age" placeholder="Enter your age" max="36" />
+        </div>
+        <div>
+          <label for="email">Email:</label>
+          <input
+            type="email"
+            id="email"
+            placeholder="Enter your email"
+            required
+            pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}"
+          />
+          <label for="password">Password:</label>
+          <input
+            type="password"
+            id="password"
+            placeholder="Enter your password"
+            required
+          />
+        </div>
+      </div>
+      <div class="second flex">
+        <label class="flex" for="gender">Gender:</label>
+        <input type="radio" name="gender" id="gender" value="male" /> Male
+        <input type="radio" name="gender" id="gender" value="female" /> Female
+        <label class="flex" for="date">Date:</label>
+        <input type="date" id="date" placeholder="Enter your date" required />
+        <label class="flex" for="tasks">Tasks:</label>
+        <input type="checkbox" name="tasks" id="tasks" value="yes" />Task 1
+        <input type="checkbox" name="tasks" id="tasks" value="yes" />Task 2
+        <input type="checkbox" name="tasks" id="tasks" value="yes" />Task 3
+        <label class="flex" for="color">Color</label>
+        <input type="color" id="color" />
+      </div>
+      <div class="third flex">
+        <label for="file">File:</label>
+        <input type="file" id="file" />
+        <label for="range">Range:</label>
+        <input type="range" id="range" />
+        <label for="time">Time:</label>
+        <input type="time" id="time" />
+        <label for="url">URL:</label>
+        <input type="url" id="url" />
+        <label for="image">Image:</label>
+        <input type="image" id="image" readonly />
+        <label for="hidden">hidden:</label>
+        <input type="hidden" id="hidden" />
+      </div>
+      <div class="fourth flex">
+        <input type="reset" />
+        <input type="submit" />
+      </div>
     </form>
     <br />
     <hr />
@@ -99,17 +97,18 @@
     <br />
     <!----------------------------------------------------------------------------------------------------------------------------->
     <!--second requirement-->
-    <img
-      src="https://helpx.adobe.com/content/dam/help/en/photoshop/using/convert-color-image-black-white/jcr_content/main-pars/before_and_after/image-before/Landscape-Color.jpg"
-      alt="My Image"
-    />
-    <hr />
-    <audio src="..." controls></audio>
-    <hr />
-    <video controls width="400">
-      <source src="..." type="video/mp4" />
-      <source src="..." type="video/webm" />
-      <!--The type attribute in  <source> element specifies the MIME type of the video file.
+    <div class="s-container flex">
+      <img
+        src="https://helpx.adobe.com/content/dam/help/en/photoshop/using/convert-color-image-black-white/jcr_content/main-pars/before_and_after/image-before/Landscape-Color.jpg"
+        alt="My Image"
+      />
+      <hr />
+      <audio src="..." controls></audio>
+      <hr />
+      <video controls width="400">
+        <source src="..." type="video/mp4" />
+        <source src="..." type="video/webm" />
+        <!--The type attribute in  <source> element specifies the MIME type of the video file.
     If the browser supports the video format specified in the first <source> element (video/mp4), it will use that source. If not, it will try the second <source> element (video/webm).
 Common video MIME types include:
 
@@ -117,7 +116,8 @@ video/mp4: MPEG-4 files with H.264 video codec and AAC audio codec.
 video/webm: WebM files with VP8 video codec and Vorbis audio codec.
 video/ogg: Ogg files with Theora video codec and Vorbis audio codec.
 -->
-    </video>
+      </video>
+    </div>
     <br />
     <hr />
     <hr />
@@ -128,15 +128,7 @@ video/ogg: Ogg files with Theora video codec and Vorbis audio codec.
     <br />
     <!----------------------------------------------------------------------------------------------------------------------------->
     <!--third requirement-->
-    <table
-      border="1"
-      cellpadding="5px"
-      cellspacing="7.5"
-      width="500"
-      height="200px"
-      bordercolor="#335599"
-      summary="Monthly Sales Data"
-    >
+    <table summary="Monthly Sales Data">
       <!--align="center"--><!--table attribute that centers the table relative to the page-->
       <caption>
         Students Marks Table
