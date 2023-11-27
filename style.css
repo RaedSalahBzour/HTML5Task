@@ -1,64 +1,122 @@
 body {
   font-family: Arial, Helvetica, sans-serif;
   margin: 0;
+  background-color: #b4b4b4bb;
 }
 .flex {
   display: flex;
 }
 .first {
   flex-direction: column;
-  background-color: rgb(188, 218, 55);
+  justify-content: center;
+  background-color: rgba(136, 45, 104, 0.342);
   width: fit-content;
+  height: 400px;
   padding: 50px;
   gap: 10px;
   margin: 10px auto 0 auto;
   border-radius: 20px;
   margin-bottom: 10px;
   gap: 20px;
+  box-shadow: inset 5px 5px 5px 5px rgba(112, 107, 107, 0.75);
+  position: relative;
+  overflow: hidden;
+}
+.first::before {
+  content: "";
+  position: absolute;
+  background-image: url(https://thalassafestival.com/wp-content/uploads/2019/12/registration-icon-png-6.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  top: 70px;
+  left: 0;
+}
+.first div {
+  padding: 10px;
 }
 .first:hover {
   opacity: 0.9;
-  box-shadow: inset 5px 5px 5px 5px rgba(0, 0, 0, 0.75);
 }
 .first input {
   border-radius: 10px;
 }
+
+.first label {
+  background-color: rgba(48, 180, 180, 0.685);
+  border-radius: 10px;
+  font-size: 20px;
+}
+h2 {
+  margin: 10px auto;
+  line-height: 0;
+}
 .second {
-  width: fit-content;
   margin: 10px auto;
   padding: 50px;
-  background-color: rgba(149, 197, 59, 0.788);
+  width: 500px;
+  background: linear-gradient(to right, #beac97, rgb(27, 148, 218));
   gap: 10px;
-  border-radius: 20px;
+  border-radius: 15px;
   margin-bottom: 10px;
+  flex-direction: column;
+}
+.container_of_2 {
+  gap: 30px;
+  flex-direction: column;
+}
+.container_of_2 div input {
+  margin: 10px;
+}
+.second h2 {
+  margin: 30px auto;
 }
 .second label {
-  background-color: rgb(14, 207, 117);
   justify-content: center;
   align-items: center;
   border-radius: 15px;
+  font-size: 20px;
 }
 .third {
   margin: 10px auto;
-  width: fit-content;
+  width: 700px;
   padding: 50px;
-  background-color: rgba(149, 197, 59, 0.541);
+  background: linear-gradient(to left, #beac97, rgb(27, 148, 218));
   gap: 10px;
   border-radius: 20px;
   margin-bottom: 10px;
+  flex-direction: column;
+}
+.container_of_2_3 {
+  gap: 30px;
+  margin: 0 20px;
 }
 .fourth {
   justify-content: center;
   padding: 30px;
-  background-color: rgba(149, 197, 59, 0.397);
+  width: 400px;
+  height: 100px;
+  background: radial-gradient(circle, rgb(199, 202, 8), #ccc8c8);
   gap: 10px;
   border-radius: 20px;
   margin-bottom: 10px;
+  flex-direction: column;
 }
-.fourth input {
-  padding: 20px;
-  width: 200px;
-  margin: 0 50px;
+.fourth div {
+  width: 100%;
+  height: 100%;
+  margin: 20px;
+  padding-left: 75px;
+  opacity: 0;
+}
+.fourth div:hover {
+  opacity: 1;
+}
+.fourth div input {
+  padding: 10px;
+  margin-left: 30px;
 }
 
 img {
@@ -71,8 +129,8 @@ caption {
   font-size: 30px;
 }
 table {
-  width: 100%;
-  margin-bottom: 20px;
+  width: 50%;
+  margin: 20px auto;
 }
 thead th {
   background-color: rgba(0, 0, 255, 0.623);

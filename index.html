@@ -23,6 +23,7 @@
     <!--first requirement-->
     <form action="">
       <div class="first flex">
+        <h2>Mandatory Info</h2>
         <div>
           <label for="name">Name:</label>
           <input
@@ -31,7 +32,6 @@
             placeholder="Enter your name"
             maxlength="20"
             required
-            autofocus
             title="alphabet characters only"
           />
           <label for="age">Age:</label>
@@ -55,37 +55,62 @@
           />
         </div>
       </div>
-      <div class="second flex">
-        <label class="flex" for="gender">Gender:</label>
-        <input type="radio" name="gender" id="gender" value="male" /> Male
-        <input type="radio" name="gender" id="gender" value="female" /> Female
-        <label class="flex" for="date">Date:</label>
-        <input type="date" id="date" placeholder="Enter your date" required />
-        <label class="flex" for="tasks">Tasks:</label>
-        <input type="checkbox" name="tasks" id="tasks" value="yes" />Task 1
-        <input type="checkbox" name="tasks" id="tasks" value="yes" />Task 2
-        <input type="checkbox" name="tasks" id="tasks" value="yes" />Task 3
-        <label class="flex" for="color">Color</label>
-        <input type="color" id="color" />
-      </div>
-      <div class="third flex">
-        <label for="file">File:</label>
-        <input type="file" id="file" />
-        <label for="range">Range:</label>
-        <input type="range" id="range" />
-        <label for="time">Time:</label>
-        <input type="time" id="time" />
-        <label for="url">URL:</label>
-        <input type="url" id="url" />
-        <label for="image">Image:</label>
-        <input type="image" id="image" readonly />
-        <label for="hidden">hidden:</label>
-        <input type="hidden" id="hidden" />
+      <div class="container_of_2_3 flex">
+        <div class="second flex">
+          <h2>Optional Info</h2>
+          <div class="container_of_2 flex">
+            <div>
+              <label for="gender">Gender:</label>
+              <input type="radio" name="gender" id="gender" value="male" /> Male
+              <input type="radio" name="gender" id="gender" value="female" />
+              Female
+              <label for="date">Date:</label>
+              <input
+                type="date"
+                id="date"
+                placeholder="Enter your date"
+                required
+              />
+            </div>
+            <div>
+              <label for="tasks">Tasks:</label>
+              <input type="checkbox" name="tasks" id="tasks" value="yes" />Task
+              1
+              <input type="checkbox" name="tasks" id="tasks" value="yes" />Task
+              2
+              <input type="checkbox" name="tasks" id="tasks" value="yes" />Task
+              3
+              <label for="color">Color</label>
+              <input type="color" id="color" />
+            </div>
+          </div>
+        </div>
+        <div class="third flex">
+          <h2>CV Field</h2>
+          <div>
+            <label for="file">File:</label>
+            <input type="file" id="file" />
+            <label for="range">Range:</label>
+            <input type="range" id="range" />
+          </div>
+          <label for="time">Time:</label>
+          <input type="time" id="time" />
+          <label for="url">URL:</label>
+          <input type="url" id="url" />
+          <label for="image">Image:</label>
+          <input type="image" id="image" readonly />
+          <label for="hidden">hidden:</label>
+          <input type="hidden" id="hidden" />
+        </div>
       </div>
       <div class="fourth flex">
-        <input type="reset" />
-        <input type="submit" />
+        <h2>Submit Here</h2>
+        <div>
+          <input type="reset" />
+          <input type="submit" />
+        </div>
       </div>
+      <div class="foot"></div>
     </form>
     <br />
     <hr />
