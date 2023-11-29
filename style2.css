@@ -35,6 +35,7 @@ a {
 ul li:nth-child(2) {
   font-size: 20px;
   color: rgb(255, 38, 0) !important;
+  font-weight: bold;
 }
 /* I don't know why the red volor didn't apply on second list child although i used important*/
 nav div {
@@ -87,6 +88,22 @@ nav div {
   .container p {
     margin-left: 11px;
   }
+  nav div {
+    margin-top: 15px;
+    font-size: 15px;
+    font-weight: bold;
+  }
+  ul {
+    display: flex;
+    gap: 10px;
+    font-size: 15px;
+  }
+  ul li:nth-child(2) {
+    font-size: 17.5px;
+    font-weight: bold;
+
+    color: rgb(255, 38, 0) !important;
+  }
 }
 /*2 columns when the max width is 500px*/
 @media (max-width: 400px) {
@@ -95,5 +112,20 @@ nav div {
   }
   .container p {
     margin-left: 7.5px;
+  }
+  nav div {
+    margin-top: 15px;
+    font-size: 15px;
+    font-weight: bold;
+  }
+  ul {
+    display: flex;
+    gap: 5px;
+    font-size: 15px;
+  }
+  ul li:nth-child(2) {
+    font-size: 15px;
+    font-weight: bold;
+    color: rgb(255, 38, 0) !important;
   }
 }
