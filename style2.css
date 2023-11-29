@@ -66,3 +66,34 @@ nav div {
   left:50%;
   transform:translate(-50%,-50%) ;*/
 }
+.container {
+  display: flex;
+  width: 600px;
+  height: 900px;
+  border: 2px solid #333;
+  flex-wrap: wrap;
+}
+.container p {
+  margin-left: 12.5px;
+  width: 180px;
+  height: 50px;
+  background-color: brown;
+}
+
+@media (max-width: 500px) {
+  .container {
+    width: 400px;
+  }
+  .container p {
+    margin-left: 11px;
+  }
+}
+/*2 columns when the max width is 500px*/
+@media (max-width: 400px) {
+  .container {
+    width: 200px;
+  }
+  .container p {
+    margin-left: 7.5px;
+  }
+}
