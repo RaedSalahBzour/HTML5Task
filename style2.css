@@ -1,0 +1,68 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+  height: 1400px;
+}
+.div1 {
+  width: 300px;
+  padding: 20px;
+  border: 2px solid #333;
+  margin: 10px;
+}
+/* when border box is applied the width shrinks */
+nav {
+  display: flex;
+  justify-content: space-around;
+  background-color: rgba(197, 240, 42, 0.541);
+  position: sticky;
+  top: 0px;
+}
+ul {
+  display: flex;
+  gap: 15px;
+}
+ul li {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+  color: black;
+}
+
+ul li:nth-child(2) {
+  font-size: 20px;
+  color: rgb(255, 38, 0) !important;
+}
+/* I don't know why the red volor didn't apply on second list child although i used important*/
+nav div {
+  margin-top: 10px;
+  font-size: 30px;
+  font-weight: bold;
+}
+.pos {
+  width: 120px;
+  height: 120px;
+  border: 2px solid #333;
+  position: relative;
+}
+.pos p {
+  width: 40px;
+  height: 40px;
+  background-color: red;
+  position: absolute;
+  /*solution1*/
+  inset: 0;
+  margin: auto;
+  /* solution2*/
+  /*top: 50%;
+  margin-top: -20px;
+  left: 50%;
+  margin-left: -20px;*/
+  /*solution3*/
+  /*top:50%;
+  left:50%;
+  transform:translate(-50%,-50%) ;*/
+}
