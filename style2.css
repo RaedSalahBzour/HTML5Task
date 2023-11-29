@@ -101,8 +101,11 @@ nav div {
   ul li:nth-child(2) {
     font-size: 17.5px;
     font-weight: bold;
-
     color: rgb(255, 38, 0) !important;
+  }
+  nav {
+    justify-content: space-between;
+    padding: 0 10px;
   }
 }
 /*2 columns when the max width is 500px*/
@@ -127,5 +130,9 @@ nav div {
     font-size: 15px;
     font-weight: bold;
     color: rgb(255, 38, 0) !important;
+  }
+  nav {
+    justify-content: space-between;
+    padding: 0 10px;
   }
 }
